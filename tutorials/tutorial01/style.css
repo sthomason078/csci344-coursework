@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #E0E0FF;
+}
+
+.navbar {
+    padding: 20px;
+    background-color: #C0C0FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    color: black;
+    padding: 4px;
+    transition: all 100ms ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: #C0C0FF;
+}
+
+.navbar a, .navbar strong {
+    margin-right: 15px;
+}
+
+.photo-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.photo-section img, .video-section iframe, .music-section iframe {
+    /* give images and iframes the same dimensions */
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+main {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #8080FF;
+}

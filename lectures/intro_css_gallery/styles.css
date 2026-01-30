@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Your code here */
+body {
+    margin: 40px;
+}
+
+header {
+    background-color: lightskyblue;
+    padding: 40px;
+}
+
+main {
+    background-color: #e0e0e0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+
+main section {
+    border: 2px solid #808080;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 250ms ease-in-out;
+}
+
+main section:hover {
+    transform: rotate(2deg);
+}
+
+main section img {
+    display: block;
+    width: 100%;
+}
+
+main section p {
+    color: #808080;
+    background: #ffffff;
+    padding: 16px;
+    margin: 0;
+}
