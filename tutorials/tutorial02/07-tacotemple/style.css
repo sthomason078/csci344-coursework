@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 20px;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #d0d0d0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+}
+
+h2 {
+    margin: 0 0 20px;
+}
+
+p, span {
+    color: #606060;
+}
