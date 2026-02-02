@@ -33,31 +33,41 @@ body {
 /* Task 3 */
 
 .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
 }
 
 header {
+  grid-column: 1 / 4;
 }
 
 nav {
 }
 
 aside {
+  grid-row: 2 / 4;
+  grid-column: 3 / 4;
 }
 
 section {
+  grid-row: 2 / 4;
 }
 
 main {
+  min-height: 70vh;
 }
 
 footer {
+  grid-column: 1 / 4;
 }
-
-
 
 @media (max-width: 1020px) {
 }
 
-
 @media (max-width: 720px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
