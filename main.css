@@ -5,7 +5,6 @@
     --main: #40ffa0;
     --main50: #40ffa080;
     --main25: #40ffa040;
-    --main12: #40ffa020;
 }
 
 *::selection {
@@ -29,7 +28,7 @@ header, section, footer {
     border: 1px solid var(--main);
     padding: 1rem;
     background-color: var(--bg);
-    box-shadow: 0.5rem 0.5rem var(--main12);
+    box-shadow: 0.5rem 0.5rem var(--main25);
 }
 
 
