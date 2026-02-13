@@ -1,0 +1,56 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    margin: 0;
+    background-color: #000010;
+}
+
+body > div {
+    display: grid;
+    grid-template: 8rem 1fr 8rem / 1fr 2fr 1fr;
+    gap: 2rem;
+    height: 100%;
+    padding: 2rem;
+    border: 0.125rem solid #000080;
+    border-radius: 4rem;
+    background-color: #000020;
+}
+
+body > div > * {
+    padding: 2rem;
+    border: 0.125rem solid #0000c0;
+    border-radius: 2rem;
+    background-color: #000040;
+}
+
+header, footer {
+    grid-column: 1 / 4;
+}
+
+nav, main, aside {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    body > div {
+        grid-template: 1fr 1fr 3fr 2fr 1fr / 1fr;
+    }
+
+    header, footer {
+        grid-column: 1 / 2;
+    }
+
+    nav, main, aside {
+        text-align: left;
+    }
+}
