@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+
+/* 3.1 Body */
+body {
+    background-color: #F0F4EF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* 3.2 Header + nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    height: 10vh;
+    padding: 0 10vw;
+}
+
+h1 {
+    color: white;
+    font-size: 1.2em;
+}
+
+nav {
+    display: flex;
+    gap: 2ch; /* space the links apart by an extra space */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 3.3 Custom font */
+h2 {
+    font-family: "Tangerine", cursive;
+    font-style: normal;
+    font-size: 4em; /* the default size looked too small compared to the reference image */
+}
+
+/* 3.4 Main */
+main {
+    min-height: 70vh; /* ensures the full viewport height is used */
+    padding: 0 10vw;
+    margin-bottom: 10vh; /* adds gap bewteen footer and main */
+    overflow: auto; /* prevents gap between header and main */
+}
+
+/* 3.5 Gallery layout */
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* column width depends on the width of main, which depends on the viewport */
+    gap: 30px;
+}
+
+/* 3.6 Card styling */
+.card {
+    background-color: white;
+    border: solid 1px lightgray;
+}
+
+.card img {
+    display: block;
+    width: 100%; /* image takes up full column width */
+}
+
+.card p {
+    margin: 20px;
+}
+
+/* 3.7 Footer */
+footer {
+    background-color: #222222;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 0 10vw;
+}
+
+/* 3.8 Media queries */
+@media screen and (max-width: 700px) {
+    .photo-container {
+        grid-template-columns: 1fr;
+    }
+
+    header, main, footer {
+        padding: 0 30px;
+    }
+}
