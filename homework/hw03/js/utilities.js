@@ -40,7 +40,7 @@ function getPostHTML(post) {
                         <button><i class="far fa-paper-plane"></i></button>
                     </div>
                     <div>
-                        <button><i class="far fa-bookmark"></i></button>
+                        ${getBookmarkButton(post)}
                     </div>
                 </div>
                 <p class="font-bold mb-3">${post.likes.length} like${post.likes.length === 1 ? "" : "s"}</p>
@@ -65,6 +65,13 @@ function getPostHTML(post) {
     `;
 
     return postHTML;
+}
+
+function getBookmarkButton(post) {
+    if (post.current_user_bookmark_id)
+        return `<button><i onclick="unbookmark(${post.current_user_bookmark_id}, ${post.id})" class="fas fa-bookmark"></i></button>`;
+    else
+        return `<button><i onclick="bookmark(${post.id})" class="far fa-bookmark"></i></button>`;
 }
 
 function getCommentsHTML(post) {

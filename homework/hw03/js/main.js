@@ -42,10 +42,39 @@ async function showPosts() {
         },
     });
     const posts = await response.json();
-    console.log(posts);
     const postsEl = document.querySelector("#posts");
-
     posts.slice(0, 10).forEach(post => postsEl.insertAdjacentHTML("beforeend", getPostHTML(post)));
+}
+
+// 2.3 Bookmark Post
+async function bookmark(postId) {
+    const postData = {
+        post_id: postId
+    }
+    const endpoint = `${rootURL}/api/bookmarks/`;
+    const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + token,
+        },
+        body: JSON.stringify(postData)
+    });
+    const data = await response.json();
+    console.log(data);
+}
+
+async function unbookmark(bookmarkId, postId) {
+    const endpoint = `${rootURL}/api/bookmarks/${bookmarkId}`;
+    const response = await fetch(endpoint, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + token,
+        }
+    });
+    const data = await response.json();
+    console.log(data);
 }
 
 // after all of the functions are defined, 
