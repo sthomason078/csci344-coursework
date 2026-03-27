@@ -1,0 +1,14 @@
+section {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px #00000020;
+    background: #ffffff;
+}
+
+h2, p {
+    margin: 16px;
+}
+
+img {
+    display: block;
+}
