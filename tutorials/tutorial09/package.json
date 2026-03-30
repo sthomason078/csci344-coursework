@@ -4,14 +4,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite dev"
+    "dev": "vite dev",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "antd": "^6.3.4",
+    "antd": "^6.3.5",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "vite": "^8.0.3"

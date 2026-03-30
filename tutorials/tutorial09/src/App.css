@@ -1,7 +1,10 @@
-.cards {
+main > div {
+    gap: 16px;
+    padding: 32px;
+}
+
+main > div.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
-    padding: 32px;
 }
