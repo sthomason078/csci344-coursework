@@ -201,7 +201,7 @@ async function followUser(userId) {
 
     const suggestionButtonEl = document.querySelector(`#suggestion-button-${userId}`);
     suggestionButtonEl.outerHTML = `
-        <button onclick="unfollowUser(${data.id}, ${userId})" id="suggestion-button-${userId}" class="text-blue-500 text-sm py-2">unfollow</button>
+        <button onclick="unfollowUser(${data.id}, ${userId})" id="suggestion-button-${userId}" class="text-blue-600 text-sm py-2">unfollow</button>
     `;
 }
 
@@ -220,7 +220,7 @@ async function unfollowUser(followingId, userId) {
 
     const suggestionButtonEl = document.querySelector(`#suggestion-button-${userId}`);
     suggestionButtonEl.outerHTML = `
-        <button onclick="followUser(${userId})" id="suggestion-button-${userId}" class="text-blue-500 text-sm py-2">follow</button>
+        <button onclick="followUser(${userId})" id="suggestion-button-${userId}" class="text-blue-600 text-sm py-2">follow</button>
     `;
 }
 
