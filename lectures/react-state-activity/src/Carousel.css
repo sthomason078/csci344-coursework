@@ -10,7 +10,7 @@
     object-fit: cover;
 }
 
-.btn {
+.carousel > button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,14 +30,14 @@
     top: 160px;
 }
 
-p.progress {
-    text-align: center;
-}
-
-.btn-left {
+.carousel > button.left {
     left: 10px;
 }
 
-.btn-right {
+.carousel > button.right {
     right: 10px;
+}
+
+.carousel > p.progress {
+    text-align: center;
 }

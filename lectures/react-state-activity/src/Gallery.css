@@ -1,15 +1,11 @@
-h1 {
-    text-align: center;
-}
-
-.gallery-btns {
+.gallery {
     display: flex;
     justify-content: center;
     gap: 16px;
     margin-bottom: 16px;
 }
 
-.gallery-btns button {
+.gallery button {
     padding: 8px 16px;
     border: 2px solid #808080;
     border-radius: 100px;
@@ -21,7 +17,7 @@ h1 {
     transition: all 100ms ease-in-out;
 }
 
-.gallery-btns button:hover, .gallery-btns button.active {
+.gallery button:hover, .gallery button.selected {
     color: #ffffff;
     background: #808080;
 }
